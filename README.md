@@ -9,3 +9,7 @@ pop
 map
 reduce
 filter
+
+## Loops
+
+for... of 
