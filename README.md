@@ -12,4 +12,5 @@ filter
 
 ## Loops
 
-for... of 
+for...of statement
+for...in statement

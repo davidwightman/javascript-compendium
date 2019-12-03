@@ -14,3 +14,21 @@ for (const element of array1) {
 // expected output: "b"
 // expected output: "c"
 ```
+
+### for... in
+
+Loop iterating over objects. 
+
+Example from Mozilla:
+```
+const object = {a: 1, b: 2, c: 3};
+
+for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
+
+// expected output:
+// "a: 1"
+// "b: 2"
+// "c: 3"
+```
