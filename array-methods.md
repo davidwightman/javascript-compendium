@@ -19,6 +19,8 @@ console.log(beasts.indexOf('giraffe'));
 
 ### splice - array method
 
+The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+
 Example from Mozilla:
 ```
 const months = ['Jan', 'March', 'April', 'June'];
@@ -31,4 +33,23 @@ months.splice(4, 1, 'May');
 // replaces 1 element at index 4
 console.log(months);
 // expected output: Array ["Jan", "Feb", "March", "April", "May"]
+```
+
+### slice - array method
+
+returns a shallow copy of a portion of a new array object where begin and end represent index of items in the array. origninal array will not be modified
+
+Example from Mozilla:
+```
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+console.log(animals.slice(2));
+// expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, 5));
+// expected output: Array ["bison", "camel", "duck", "elephant"]
+
 ```
