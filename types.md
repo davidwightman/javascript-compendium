@@ -1,3 +1,5 @@
+## Types
+
 primitive types
 
 number
