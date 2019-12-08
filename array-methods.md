@@ -1,5 +1,45 @@
 ## Array Methods
 
+array literal syntax
+let arr = []
+
+the other way to create an array:
+
+let arr = new Array('david')
+
+### push - array method
+
+Adds one or more elements to the end of array and returns the new length of the array
+
+Example from Mozilla:
+```
+const animals = ['pigs', 'goats', 'sheep'];
+
+const count = animals.push('cows');
+console.log(count);
+// expected output: 4
+console.log(animals);
+// expected output: Array ["pigs", "goats", "sheep", "cows"]
+
+animals.push('chickens', 'cats', 'dogs');
+console.log(animals);
+// expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+
+```
+
+### pop - array method
+
+remove from end and returns it to you
+
+### shift - array method
+
+remove from the start
+
+### unshift - array method
+
+add to start
+
+
 ### indexOf - array method
 
 Example from Mozilla:

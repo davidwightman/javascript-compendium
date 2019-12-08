@@ -1,5 +1,8 @@
 ## String Methods
 
+Note:
+strings are immutable in that you cannot change individual indexes of strings like you can with arrays.
+
 ### toUpperCase()
 makes entire string uppercase
 
