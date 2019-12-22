@@ -165,3 +165,18 @@ sorts in place and returns a sorted array. updates the array and returns it. Con
 
 ```
 ```
+
+### forEach
+calls the function on each element
+
+### map
+
+creates a new array with the results of calling a callback on every element in the array
+
+### find
+
+returns the value of the first element in the array that satisfies the provided testing function.
+
+### filter
+
+creates a new array with all elements that pass the test implemented by the provided funtion.
