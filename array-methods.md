@@ -164,6 +164,16 @@ console.log(animals.slice(1, 5));
 sorts in place and returns a sorted array. updates the array and returns it. Converts every value to string and uses utf-16 codes. mostly used with a compare function that is passed in.
 
 ```
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array1);
+// expected output: Array [1, 100000, 21, 30, 4]
+
 ```
 
 ### forEach
@@ -180,3 +190,28 @@ returns the value of the first element in the array that satisfies the provided 
 ### filter
 
 creates a new array with all elements that pass the test implemented by the provided funtion.
+
+### every
+
+tests whether ALL elements in the array pass the provided function. It returns a Boolean value.
+
+### some
+
+similar to every, but returns true if ANY of the array elements pass the test function.
+
+### reduce
+
+executes a reducer function on each element of the array, resulting in a single value
+
+```
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+// expected output: 15
+```
