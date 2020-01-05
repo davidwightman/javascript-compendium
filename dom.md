@@ -1,5 +1,11 @@
 ## DOM
 
+the DOM is a JavaScript representation of a webpage
+
+It's your JS "window" into the contents of a webpage
+
+It's just a bunch of objects that you can interact with via JS
+
 a programming api for documents
 
 the bridge between html and javascript
