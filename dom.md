@@ -12,7 +12,7 @@ the bridge between html and javascript
 
 each html tag is turned into a javascript object by the browser and stored within the DOM
 
-document is at the top of tree
+document object is at the top of tree
 
 "dom is a glorified javascript object made from html on the page" - C. Williams
 
@@ -20,18 +20,22 @@ document is at the top of tree
 
 all of the below should be done on document
 
+getElementById()
+
 ```
 // example: 
 document.getElementById('header')
 ```
 
-getElementById()
-
 getElementsByClassName()
-- this method returns an array
+- this method returns an array-like collection. HTMLCollection
 
 getElementsByTagName()
-- also returns array
+- also returns array-like object that is not array. it is an HTMLCollection. you can use array indexes (brackets). however array methods DO NOT work. just .length works. you can iterat over it with a for of loop. you can however spread into an array 
+```
+const inputs = document.getElementsByTagName('input')
+const arr = [...inputs]
+```
 
 querySelector() + querySelectorAll()
 - enter css tags
