@@ -38,7 +38,10 @@ const arr = [...inputs]
 ```
 
 querySelector() + querySelectorAll()
-- enter css tags
+- enter css selector
+- element or...
+- id or...
+- class
 
 ```
 // example: 
@@ -47,20 +50,26 @@ document.querySelector('#header')
 
 document.querySelectorAll('.li')
 //would return all in an array
-
+// returns a NodeList, an array-like object
 ```
 
 createElement()
 
 createAttribute()
 
-#### Other useful related methods
+#### Other useful related properties and methods
 
 .document.body.appendChild(p)
 
 .setAttributeNode()
 
 .innerHTML
+- returns text AND all other tags
 - manipulates the text in selected tag
+- if you are adding tags you need to set it all as one string.
 
 .innerText
+- get all of the text inside of it, no matter how many elements. you cannot create new elements. use innerHTML to create new elements
+
+.textContent
+- like innerText but preserves spacing, and script text if included. would also show text with style display: none. So, basically just cuts out the tags.
