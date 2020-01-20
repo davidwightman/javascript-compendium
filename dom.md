@@ -73,3 +73,37 @@ createAttribute()
 
 .textContent
 - like innerText but preserves spacing, and script text if included. would also show text with style display: none. So, basically just cuts out the tags.
+
+## Values on input elements
+
+.value
+- You can get the value of an input with value
+
+.checked
+- For check box, this returns true or false.
+
+.placeholder
+- can be updated
+
+.href, .src
+- we have access to and can change
+
+## Methods
+
+.getAttribute()
+- pass in a string of desired attribute
+
+.setAttribute()
+- pass in two parameters, name
+
+.parentElement
+- find parent of given element
+- can do multiple parents to work up the dom tree
+
+.children
+- find things nested in element
+
+nextElementSibling
+
+previousElementSibling
+
