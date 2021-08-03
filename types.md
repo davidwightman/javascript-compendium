@@ -1,24 +1,24 @@
 ## Types
 
 
-### primitive types
+### primitive values
 
-number
-string
-boolean
-null - intentioanl absence of any value
+number - used for math calculations
+string - used for text
+boolean - used for logical operators
+null - used for intentioanlly missing values
 - must be assined
 - typeof null is "object"
-undefined - variables that do not have an assigned value
+undefined - used for unintentionally missing values
 
-Symbol
-BigInt
+Symbol - (uncommon) used to perform rituals and hide secrets
+BigInt - (uncommon) used for math on big numbers
 
 ### reference types 
 
-functions
-objects 
-arrays
+functions - used to refer to code
+objects - used to group related data and code
+arrays - a type of object
 
 they point to value.
 
