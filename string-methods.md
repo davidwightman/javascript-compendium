@@ -1,7 +1,7 @@
 ## String Methods
 
 Note:
-strings are immutable in that you cannot change individual indexes of strings like you can with arrays.
+strings are immutable in that you cannot change individual indexes of strings like you can with arrays. Also, even though strings have built in properties they are not objects!
 
 ### toUpperCase()
 makes entire string uppercase

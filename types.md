@@ -3,13 +3,18 @@
 
 ### primitive values
 
+You can't change primitive values, all primitive values are immutable. (variables may change, variable point to values)
+
 number - used for math calculations
 string - used for text
 boolean - used for logical operators
 null - used for intentioanlly missing values
-- must be assined
-- typeof null is "object"
+- must be assigned
+- typeof null is "object" (which is a lie. null is a primitve value and does not behave in any way like an object)
 undefined - used for unintentionally missing values
+```
+console.log(typeof(undefined)); // "undefined"
+```
 
 Symbol - (uncommon) used to perform rituals and hide secrets
 BigInt - (uncommon) used for math on big numbers
