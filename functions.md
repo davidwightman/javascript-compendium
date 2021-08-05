@@ -1,4 +1,5 @@
 ## Functions
+technically functions are objects
 
 function declaration vs function expression
 HOISTING!

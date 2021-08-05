@@ -1,5 +1,15 @@
 ## Objects
 
+### Types of objects
+- arrays, dates, RegExps, and other non-primitive values:
+```
+console.log(typeof({})); // "object"
+console.log(typeof([])); // "object"
+console.log(typeof(new Date())); // "object"
+console.log(typeof(/\d+/)); // "object"
+console.log(typeof(Math)); // "object"
+```
+
 ### Shorthand object properties
 
 ```
