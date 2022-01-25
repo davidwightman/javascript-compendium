@@ -11,6 +11,7 @@ arguments cannot be used in arrow function but rest can
 ```
 const results = [1, 2, 3, 4]
 
+// ordered list of variable names
 const [one, two, three, four] = results;
 console.log(one) // returns 1
 ```
@@ -32,7 +33,7 @@ console.log(first, nation) // returns david here
 
 ```
 function print({first, last, country}) {
-    console.log(first) 
+    console.log(first)
 }
 // returns david
 ```
