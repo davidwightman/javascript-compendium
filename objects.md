@@ -1,7 +1,9 @@
 ## Objects
 
 ### Types of objects
+
 - arrays, dates, RegExps, and other non-primitive values:
+
 ```
 console.log(typeof({})); // "object"
 console.log(typeof([])); // "object"
@@ -14,7 +16,7 @@ console.log(typeof(Math)); // "object"
 
 ```
 {max: max,
-min: min, 
+min: min,
 sum: sum}
 {max,
 min,
@@ -53,3 +55,6 @@ the value of this depends on the invocation context of the function it is used i
 
 arrow function will not bind to object but the Window object of object.
 
+### more
+
+Set and Map classes
