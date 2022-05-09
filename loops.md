@@ -43,3 +43,18 @@ for (const property in object) {
 // "b: 2"
 // "c: 3"
 ```
+
+### break and continue
+
+- break: out of look
+- continue: skip an iteration
+
+### looping using while
+
+```
+let i = 0
+while (i < 4) {
+  console.log(i)
+  i++
+}
+```

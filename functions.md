@@ -25,6 +25,16 @@ const square = function (num) {
 square(7) //49
 ```
 
+### anonymous function
+
+- the function inside the below forEach is an anonymous function because we never have to call it by name
+
+```
+[1.2,3].forEach(function(value) {
+    console.log(value)
+})
+```
+
 difference between arguments (the value you acually pass in) and parameters (the placeholder for what you pass in a function)
 
 ### Higher Order function
