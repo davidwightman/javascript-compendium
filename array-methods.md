@@ -12,6 +12,7 @@ let arr = new Array('david')
 Adds one or more elements to the end of array and returns the new length of the array
 
 Example from Mozilla:
+
 ```
 const animals = ['pigs', 'goats', 'sheep'];
 
@@ -48,6 +49,7 @@ console.log(array1.unshift(4, 5));
 console.log(array1);
 // expected output: Array [4, 5, 1, 2, 3]
 ```
+
 ### concat - array method
 
 used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
@@ -60,7 +62,7 @@ console.log(array1.concat(array2));
 // expected output: Array ["a", "b", "c", "d", "e", "f"]
 ```
 
-### includes - arrat method
+### includes - array method
 
 determines whether an array includes a certain value among its entries, returning true or false as appropriate
 
@@ -84,6 +86,7 @@ console.log(pets.includes('at'));
 returns the first index at which a given element can be fount in the array, or -1 if it is not present.
 
 Example from Mozilla:
+
 ```
 const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
 
@@ -125,6 +128,7 @@ console.log(elements.join('-'));
 The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
 
 Example from Mozilla:
+
 ```
 const months = ['Jan', 'March', 'April', 'June'];
 months.splice(1, 0, 'Feb');
@@ -145,6 +149,7 @@ returns a shallow copy of a portion of a new array object where begin and end re
 start index, how many things you want to delete, whatever you want to insert
 
 Example from Mozilla:
+
 ```
 const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 
@@ -161,7 +166,7 @@ console.log(animals.slice(1, 5));
 
 ### sort - array method
 
-sorts in place and returns a sorted array. updates the array and returns it. Converts every value to string and uses utf-16 codes. mostly used with a compare function that is passed in.
+sorts in place and returns the sorted array. Converts every value to string and uses utf-16 codes. mostly used with a compare function that is passed in.
 
 ```
 const months = ['March', 'Jan', 'Feb', 'Dec'];
@@ -174,10 +179,16 @@ array1.sort();
 console.log(array1);
 // expected output: Array [1, 100000, 21, 30, 4]
 
+array1.sort(comparNumbers)  // [1,4,21,30,100000]
+function compareNumbers(firstNumber, secondNumber) {
+  return firstNumber - second number
+}
+
 ```
 
 ### forEach
-calls the function on each element
+
+calls the function on each element. The function paramaters have access to value, index, and array.
 
 ### map
 
@@ -190,6 +201,15 @@ returns the value of the first element in the array that satisfies the provided 
 ### filter
 
 creates a new array with all elements that pass the test implemented by the provided funtion.
+
+```
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
+```
 
 ### every
 
@@ -214,4 +234,23 @@ console.log(array1.reduce(reducer));
 // 5 + 1 + 2 + 3 + 4
 console.log(array1.reduce(reducer, 5));
 // expected output: 15
+```
+
+### reduceRight
+
+like reduce but starts from the end of the array
+
+### how to check the type of array
+
+typeof array returns 'object' so that is not really helpful
+
+```
+const arr = [1,2,]
+typeof arr // object
+```
+
+Instead use Array.isArray() and pass in the array
+
+```
+Array.isArray(arr) // tre
 ```
