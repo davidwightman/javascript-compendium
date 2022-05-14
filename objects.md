@@ -58,3 +58,34 @@ arrow function will not bind to object but the Window object of object.
 ### more
 
 Set and Map classes
+
+### checking if an object has a specific key
+
+```
+console.log('name' in website) // true but also checks on objects that it is inheriting from. so toString would be true as well
+console.log(website.hasOwnProperty('name'))
+```
+
+- so use hasOwnProperty most of the time
+
+### get
+
+### set
+
+### **proto**
+
+- how to set inherited object
+
+### iterating over an object
+
+- Object.keys(obj) - excludes inherited keys. excludes Symbols.
+- Object.values(obj)
+- Object.values(obj) // [['key', 'value]]
+
+```
+for (key in obj) {
+  console.log(key)
+}
+```
+
+- will ignore Symbols but will include inherited properties
