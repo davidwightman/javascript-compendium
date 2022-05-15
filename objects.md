@@ -89,3 +89,27 @@ for (key in obj) {
 ```
 
 - will ignore Symbols but will include inherited properties
+
+### Copying objects
+
+```
+Object.assign(myObj, obj)
+```
+
+### make object immutaable
+
+- cannot change or add new properties
+
+```
+Object.freeze(obj)
+
+Object.isFrozen(obj) // true
+```
+
+- seal allows you to change properties but not add
+
+```
+Object.seal(obj)
+
+Object.isSealed(obj) // true
+```

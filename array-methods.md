@@ -166,7 +166,7 @@ console.log(animals.slice(1, 5));
 
 ### sort - array method
 
-sorts in place and returns the sorted array. Converts every value to string and uses utf-16 codes. mostly used with a compare function that is passed in.
+sorts IN PLACE and returns the sorted array. Converts every value to string and uses utf-16 codes. mostly used with a compare function that is passed in.
 
 ```
 const months = ['March', 'Jan', 'Feb', 'Dec'];
