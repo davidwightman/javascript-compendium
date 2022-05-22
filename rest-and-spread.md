@@ -1,8 +1,30 @@
 ### Rest
 
-Collects things into a single array
+Condense multiple elements into a single array.
 
-arguments cannot be used in arrow function but rest can
+```
+const arr [1,2,3,4,5,6]
+const [first, second, ...rest] = arr;
+console.log(rest) // [3,4,5,6]
+```
+
+Rest can also be used to accept an infinite number of arguments which are then accessible as an array
+
+```
+function myFunc(...args) {
+    console.log(args) // [1,2,3,4]
+    }
+    console.log(myFunc([1,2,3,4]))
+```
+
+### Spread
+
+```
+const arr1 = [1,2]
+const arr2 = [3,4,5]
+
+const combinedArr = [...arr1, ...arr2] // [1,2,3,4,5]
+```
 
 ### Destructuring
 
