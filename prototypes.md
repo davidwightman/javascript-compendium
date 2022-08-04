@@ -2,11 +2,11 @@
 
 prototypes are the mechanism by which JS objects inherit features from one another
 
-__proto__
+**proto**
 
 ### factory functions
 
-### Constructor functions and the new 
+### Constructor functions and the new
 
 new keyword does the following things:
 Creates a blank, plain JavaScript object;
@@ -15,6 +15,7 @@ Passes the newly created object from Step 1 as the this context;
 Returns this if the function doesn't return its own object.
 
 methods should be called outside:
+
 ```
 function Color(r,g) {
     this.r = r;
@@ -82,3 +83,9 @@ class Dog extends Pet {
 }
 
 ```
+
+### Private fields
+
+the # prevents a field from being modified
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields
