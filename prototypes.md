@@ -89,3 +89,31 @@ class Dog extends Pet {
 the # prevents a field from being modified
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields
+
+### static properties and methods
+
+- only available on class and not instance
+
+```
+class Player {
+	static description = "player in game"
+}
+
+Player.description
+```
+
+### extending classes
+
+- super calls the constructor in the parent class (Player) so pass those properties in
+
+```
+class AdminPlayer extends Player {
+	constructor (first, last, powers) {
+		super(first, last);
+		this.powers = powers;
+	}
+	isAdmin = true;
+}
+
+const admin = new AdminPlayer("admin", "mcadmin", ["delete", "restore world"])
+```
